@@ -1,0 +1,13 @@
+[ 2015-05-01T10:49:55+08:00 ] 220.181.108.108 /index.php?s=/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `xiaohua_users` [ RunTime:0.1095s ]
+SQL: SELECT * FROM `xiaohua_users` WHERE ( sex=0 ) ORDER BY rand() LIMIT 2   [ RunTime:0.0536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+

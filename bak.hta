@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  Options FollowSymlinks
+  RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^putuo3.com [NC]
+RewriteRule ^(.*)$ http://www.putuo3.com/$1 [L,R=301]
+
+
+
+
+
+</IfModule>

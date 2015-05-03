@@ -1,0 +1,192 @@
+[ 2015-04-11T01:28:26+08:00 ] 218.23.64.62 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-04-11T03:06:57+08:00 ] 125.114.128.91 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-04-11T04:49:14+08:00 ] 125.114.128.91 /?s=index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+ERR: 无法加载模块:Index
+
+[ 2015-04-11T04:49:53+08:00 ] 125.114.128.91 /?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+ERR: 无法加载模块:Index
+
+[ 2015-04-11T04:50:26+08:00 ] 125.114.128.91 /?s=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+ERR: 无法加载模块:1
+
+[ 2015-04-11T04:50:42+08:00 ] 125.114.128.91 /?s=shome/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+ERR: 无法加载模块:Shome
+
+[ 2015-04-11T04:55:59+08:00 ] 125.114.128.91 /index.php?s=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+ERR: 无法加载模块:1
+
+[ 2015-04-11T05:01:28+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T05:01:28+08:00 ] 125.114.128.91 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-04-11T05:01:28+08:00 ] 125.114.128.91 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-04-11T05:01:42+08:00 ] 125.114.128.91 /xiaohua/s0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+ERR: 无法加载模块:Xiaohua
+
+[ 2015-04-11T05:01:55+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T05:02:26+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T05:02:42+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T05:02:52+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T05:08:32+08:00 ] 125.114.128.91 /index.php?s=/addon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T05:08:57+08:00 ] 125.114.128.91 /index.php?s=/addons
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+ERR: 无法加载模块:Addons
+
+[ 2015-04-11T05:09:01+08:00 ] 125.114.128.91 /index.php?s=/addon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T06:38:57+08:00 ] 125.114.128.91 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-04-11T06:38:57+08:00 ] 125.114.128.91 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-04-11T07:04:19+08:00 ] 125.114.128.91 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-04-11T07:04:19+08:00 ] 125.114.128.91 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-04-11T08:39:41+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T08:39:58+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T08:46:42+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T08:46:43+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T08:50:48+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T09:04:47+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T09:06:01+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T09:06:02+08:00 ] 125.114.128.91 /index.php?s=/addon/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+ERR: 无法加载模块:Addon
+
+[ 2015-04-11T16:14:35+08:00 ] 125.114.128.91 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-04-11T16:14:35+08:00 ] 125.114.128.91 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+ERR: 无法加载模块:Favicon
+

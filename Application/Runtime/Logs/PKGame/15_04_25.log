@@ -1,0 +1,91 @@
+[ 2015-04-25T19:07:11+08:00 ] 123.155.165.204 /index.php?s=/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `xiaohua_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `xiaohua_users` WHERE ( sex=0 ) ORDER BY rand() LIMIT 2   [ RunTime:0.0186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2015-04-25T19:11:53+08:00 ] 123.155.165.204 /index.php?s=/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `xiaohua_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xiaohua_users` WHERE ( sex=0 ) ORDER BY rand() LIMIT 2   [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2015-04-25T19:11:57+08:00 ] 123.155.165.204 /index.php?s=/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `xiaohua_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xiaohua_users` WHERE ( sex=0 ) ORDER BY rand() LIMIT 2   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2015-04-25T19:12:03+08:00 ] 123.155.165.204 /index.php?s=/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `xiaohua_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xiaohua_users` WHERE ( sex=0 ) ORDER BY rand() LIMIT 2   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2015-04-25T19:12:10+08:00 ] 123.155.165.204 /index.php?s=/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `xiaohua_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xiaohua_users` WHERE ( sex=0 ) ORDER BY rand() LIMIT 2   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2015-04-25T19:12:13+08:00 ] 123.155.165.204 /index.php?s=/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `xiaohua_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xiaohua_users` WHERE ( sex=0 ) ORDER BY rand() LIMIT 2   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2015-04-25T19:12:14+08:00 ] 123.155.165.204 /index.php?s=/PKGame/PKGameApi/newvote
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `xiaohua_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xiaohua_users` WHERE ( sex=0 ) ORDER BY rand() LIMIT 2   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+

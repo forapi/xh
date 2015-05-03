@@ -1,0 +1,24 @@
+[ 2015-04-04T12:46:15+08:00 ] 101.68.192.243 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-04-04T14:33:14+08:00 ] 101.68.192.243 /phpmyadmin/sql.php?db=games&table=xiaohua_users&token=d14b85d40c8e28a190d350949df88b34&pos=0&ajax_request=true&ajax_page_request=true&menuHashes=cb870738-dcbcf26c&_nocache=1428129346893247776
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+ERR: 无法加载模块:Phpmyadmin
+
+[ 2015-04-04T14:33:28+08:00 ] 101.68.192.243 /game/phpmyadmin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+ERR: 无法加载模块:Game
+
+[ 2015-04-04T16:57:21+08:00 ] 101.68.192.243 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+ERR: 无法加载模块:Favicon
+
