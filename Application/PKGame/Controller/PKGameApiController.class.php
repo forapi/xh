@@ -6,25 +6,32 @@ class PKGameApiController extends Controller {
     	$Users = M("Users");
     	$p = 0;
     	//$out = $Users->where('sex=0')->order('id')->limit(10)->select();
-    	$out = $Users->where('sex='.$p)->order('rand()')->limit(2)->select();
+    	//$out = $Users->where('sex='.$p)->order('rand()')->limit(2)->select();
+        //$out = $Users->where('sex=0')->order('id')->limit(2)->field('nickname,school,sex,src_img')->select();
     	
-    	print_r($out);
+    	//print_r($out[0]);
+       
         
     }
 
     public function newvote(){
+        
     	header('Content-type: application/json; charset=utf-8');
     	
     	$Users = M("Users");
     	
     	$out = $Users->where('sex='.$_POST['sex'])->order('rand()')->limit(2)->select();
+        session('session_array',$out);
     	//print_r($out);
     	
     	//$sql = 'SELECT * FROM `xiaohua_users` WHERE `sex`= 0 ORDER BY rand() limit 2';
-    	
+
+    	unset($out[0]['id'],$out[1]['id']);//id不带入到json
     	$array = array('status' => 8000,
     		'content' => $out);
     	echo json_encode($array);
+
+        
     	
 
     
@@ -47,9 +54,18 @@ class PKGameApiController extends Controller {
 
     public function vote(){
     	header('Content-type: application/json; charset=utf-8');
-    	
+    	$session_array = session('session_array');
 
-    	echo '{"status":8100}';
+        $Users = M("Users");
+        $id = isset($_POST['id']) ? $_POST['id'] : '';
+        $sqlid =$session_array[$id]['id'];
+        $res = $Users->where('id='.$sqlid)->setInc('rank');//+1
+        if ($res) echo '{"status":8100}';
+
+        
+        //print_r($session_array);
+        session(null);
+
 
     }
 
