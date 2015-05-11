@@ -1,7 +1,3 @@
-/**
- * Created by Neksus(n@wowdg.com)  on 2014/11/3.
- */
-
 function PKGameInitialization(init) {
 	window.SetImg = function($img, thumb_img) {
 		$img.attr("src", "Preloader_4.gif");

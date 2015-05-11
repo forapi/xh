@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>微信 7栋空间</title>
+    <title>微信 play76</title>
 
     <!--<link href="template/css/bootstrap.min.css" rel="stylesheet">-->
     <link href="template/css/bootstrap.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 		<script src="xiaohua.js"></script>
 	<script>
 	$(function(){
-			PKGameInitialization({function:"newvote",argument:<?if(!isset($_GET['s']))  echo 0 ; else  echo $_GET['s']; ?>,mugen:0});
+			PKGameInitialization({function:"newvote",argument:<?if(!isset($_GET['s']))  echo 0 ; else  echo $_GET['s']; ?>,mugen:<?if($_GET['m']==1)  echo 1 ; else  echo 0; ?>});
 		})
 	</script>
 </head>
@@ -29,10 +29,10 @@
     <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
 
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php?s=0">女生PK</a></li>
-                <li ><a href="index.php?s=1">男生PK</a></li>
-                <li><a href="list.php?s=0">女生榜</a></li>
-                <li><a href="list.php?s=1">男生榜</a></li>
+                <li class="active"><a href="index.php?s=0<?if($_GET['m']==1) echo '&m=1';?>">女生PK</a></li>
+                <li ><a href="index.php?s=1<?if($_GET['m']==1) echo '&m=1';?>">男生PK</a></li>
+                <li><a href="list.php?s=0<?if($_GET['m']==1) echo '&m=1';?>">女生榜</a></li>
+                <li><a href="list.php?s=1<?if($_GET['m']==1) echo '&m=1';?>">男生榜</a></li>
             </ul>
 
     </nav>
@@ -137,13 +137,13 @@
     </div>
 
 
-    <p class="text-center" style="margin: 22px 0;"><a href="http://android.myapp.com/myapp/detail.htm?apkName=com.terry.photopk">下载安卓客户端看更多美女自拍</a></p>
+    <p class="text-center" style="margin: 22px 0;"><a href="http://www.play76.com/">XXXXXXXXXXXXXXXXXXX</a></p>
     <p class="text-center"><a href="http://mp.weixin.qq.com/s?__biz=MjM5ODAyNTc4MA==&mid=201652606&idx=4&sn=3647b44ab33891f91679d107605baecb#rd" class="btn btn-primary" role="button">我也要参加</a></p>
-    <p class="text-center"><small><a href="http://wd.koudai.com/?userid=504291">精选首饰</a></small></p>
+    <p class="text-center"><small><a href="http://www.play76.com/">XXXXXX</a></small></p>
     <div class="footinfo">
-    <p class="text-center"><small>活动主办：<a href="http://www.7dong.cc/forum.php?mod=viewthread&tid=102280">7栋空间</a></small></p>
-    <p class="text-center"><small>开发团队：<a href="http://www.wowdg.com">哇塞文化</a> 微店啦</small></p>
-    <p class="text-center"><small>赞助单位：<a href="http://w.7dong.cc/xiaohua/zanzhu/yuanchuang/">元创摄影</a> <a href="http://w.7dong.cc/xiaohua/zanzhu/liulian/">榴莲摄影</a> 星巴克松山湖店</small></p>
+    <p class="text-center"><small>活动主办：<a href="http://www.play76.com/">play76</a></small></p>
+    <p class="text-center"><small>开发团队：<a href="http://www.play76.com/">微游科技</a> 微游科技</small></p>
+    <p class="text-center"><small>赞助单位：<a href="http://www.play76.com/">微游科技</a> <a href="http://www.play76.com/">微游科技</a> 微游科技</small></p>
 
 </div>
 </div>
@@ -161,8 +161,8 @@
 
 <script>
 var imgUrl='http://w.7dong.cc/xiaohua/images/wxshare.jpg';
-var lineLink='http://android.myapp.com/myapp/detail.htm?apkName=com.terry.photopk';
-//var lineLink='http://w.7dong.cc/xiaohua/';
+//var lineLink='http://android.myapp.com/myapp/detail.htm?apkName=com.terry.photopk';
+var lineLink='http://www.putuo3.com/xiaohua/';
 var descContent='哪所大学美女最多？史上最真实的自拍大PK!';
 var shareTitle='哪所大学美女最多？史上最真实的自拍大PK!';
 var appid='wxda8b1307f44c0840';
