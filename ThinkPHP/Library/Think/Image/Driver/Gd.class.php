@@ -39,8 +39,10 @@ class Gd{
      */
     public function open($imgname){
         //检测图像文件
-        if(!is_file($imgname)) E('不存在的图像文件');
-
+        //if(!is_file($imgname)) E('不存在的图像文件');
+        //diy 判读远程文件是否存在
+        if(!$this->diy_check_remote_file_exists($imgname)) E('不存在的图像文件');
+        
         //获取图像信息
         $info = getimagesize($imgname);
 
@@ -71,6 +73,26 @@ class Gd{
         }
     }
 
+    //判断远程文件 
+    private function diy_check_remote_file_exists($url) { 
+        $curl = curl_init($url); 
+        // 不取回数据 
+        curl_setopt($curl, CURLOPT_NOBODY, true); 
+        // 发送请求 
+        $result = curl_exec($curl); 
+        $found = false; 
+        // 如果请求没有发送失败 
+        if ($result !== false) { 
+            // 再检查http响应码是否为200 
+            $statusCode = curl_getinfo($curl, CURLINFO_HTTP_CODE); 
+            if ($statusCode == 200) { 
+                $found = true; 
+            } 
+        } 
+        curl_close($curl);
+        return $found; 
+    }
+
     /**
      * 保存图像
      * @param  string  $imgname   图像保存名称
@@ -91,7 +113,10 @@ class Gd{
         if('jpeg' == $type || 'jpg' == $type){
             //JPEG图像设置隔行扫描
             imageinterlace($this->img, $interlace);
-            imagejpeg($this->img, $imgname,$quality);
+            //imagejpeg($this->img, $imgname,$quality);
+            //diy 直接显示图片
+            Header("Content-type: image/JPEG");
+            imagejpeg($this->img);
         }elseif('gif' == $type && !empty($this->gif)){
             $this->gif->save($imgname);
         }else{
@@ -99,6 +124,8 @@ class Gd{
             $fun($this->img, $imgname);
         }
     }
+
+    
 
     /**
      * 返回图像宽度
@@ -179,7 +206,13 @@ class Gd{
         $this->info['width']  = $width;
         $this->info['height'] = $height;
     }
-
+/**
+    public function diy_imageout(){
+        if(empty($this->img)) E('没有可以被保存的图像资源');
+        imageinterlace($this->img, true);
+        imagejpeg($this->img, 'name', 100);
+    }
+*/
     /**
      * 生成缩略图
      * @param  integer $width  缩略图最大宽度
