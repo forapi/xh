@@ -36,11 +36,11 @@ class IndexController extends Controller {
 
     
 
-    public function getImage($remote=null,$filename=null){//不下载图片，暂时不用
+    public function getImage($remote=null,$filename=null){
 
         //$remote = 'http://mmbiz.qpic.cn/mmbiz/O2A1ZMEIfaibVwMOxQdJPSibAvyRlDkNEuEUZDqwDdo11O90y16vNaRNmphne9INYQq0lyyLhsWogiaJbcY3hlwog/0';
         //$filename = time();
-        $local = './Upload2/'.$filename;
+        $local = './Upload2/'.$filename;//因为“此图片来自微信公众平台 未经允许不得引用”，所以下载到本地
         //静态方法不用实例化类
         Http::curlDownload($remote,$local);
         //返回值怎么弄？？？
@@ -49,7 +49,7 @@ class IndexController extends Controller {
 
     public function imageView($imagename=null,$w=null){
         $h=1280;
-        $PicUrl = "http://pkphoto.qiniudn.com/".$imagename."?imageview";
+        $PicUrl = "http://www.putuo3.com/Upload2/".$imagename;
         //$PicUrl = 'http://mmbiz.qpic.cn/mmbiz/'.$imagename.'/0';
 
         $image = new \Think\Image(\Think\Image::IMAGE_GD,$PicUrl);        
@@ -124,34 +124,26 @@ class IndexController extends Controller {
                     
                     break;
                 case Wechat::MSG_TYPE_IMAGE:
-                    //$content = "image";
-                    //$content = $data['MediaId'];
-                    //$media_id = 'KX5ja-c3Q5Trc_ciHe1xSLsU-Sxvnrd2P4fiAYVSZwn26VrywcyQtSmOMHBrAOAk';
-                    //$wechat->replyImage($media_id);
-                    $wx_data['open_id'] = $data['FromUserName'];
-                    $wx_data['wx_src_img'] = $data['PicUrl'];
                     $user = D('user');
-                    $res = $user->updataPic($wx_data);
-                    /**
+                    
                     $PicUrl = $data['PicUrl'];
                     $FromUserName = $data['FromUserName'];
                     $filename = md5($FromUserName);
                     
-                    if(is_file('./Upload2/'.$filename)){//图片多的话，可能会查数据库快点
-                        $text = "您已经上传过照片";
-                    }else{
-                        $this->getImage($PicUrl,$filename);
-                        $text = "填写完报名信息，即可成功报名\n\n<a href='http://www.baidu.com'>点击报名</a>";
-                      }
-                      */
+                      $wx_data['open_id'] = $data['FromUserName'];
+                      $imageViewUrl = "http://www.putuo3.com/?s=/home/Index/imageView/imagename/";
+                      $wx_data['src_img'] = $imageViewUrl.$filename.'/w/240/';
+                      $res = $user->updataPic($wx_data);
                       //报名信息也填在微信吧
                     
                       switch ($res) {
                           case 8000:
+                              $this->getImage($PicUrl,$filename);
                               $text = "图片上传成功！\n请回复“bd+姓名+学校+性别”来绑定，\n例如：bd+张三+北京大学+男";
                               break;
 
                           case 8001:
+                              $this->getImage($PicUrl,$filename);
                               $text = "图片更换成功";
                               break;
 
