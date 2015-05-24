@@ -15,7 +15,7 @@ class UserModel extends Model{
 	public function newvote(){
 		$Users = M("Users");
     	
-    	$out = $Users->where('sex='.$_POST['sex'])->order('rand()')->limit(2)->select();//因为vote中需要对应的id
+    	$out = $Users->where('sex='.$_POST['sex'].' AND allow = 1')->order('rand()')->limit(2)->select();//因为vote中需要对应的id
     	
     	session('session_array',$out);
         unset($out[0]['id'],$out[1]['id']);//id不带入到json
