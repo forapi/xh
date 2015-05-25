@@ -49,4 +49,19 @@ class UserModel extends Model{
 		
 		return $res;
 	}
+
+	public function check(){
+		$Users = M('Users');
+		$NeedCheck = $Users->Where('allow = 0')->select();
+		return $NeedCheck;
+	}
+
+	public function checkAllow($idArray=array()){
+		$Users = M('Users');
+		$arr_string = join(',', $idArray); //字符串(1,2,3)
+		$allow = $Users->Where('id in ('.$arr_string.')')->setField('allow',1);
+		if ($allow) {
+			return true;
+		}
+	}
 }
