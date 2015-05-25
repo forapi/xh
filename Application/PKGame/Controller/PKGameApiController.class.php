@@ -25,6 +25,8 @@ class PKGameApiController extends Controller {
     	
     	$user = D('user');
         $out = $user->newvote();
+        $out[0]['src_img']  = $out[0]['src_img'].'/w/240/';//图片宽度设为240
+        $out[1]['src_img']  = $out[1]['src_img'].'/w/240/';//图片宽度设为240
         $array = array('status' => 8000,
             'content' => $out);
         echo json_encode($array);
@@ -36,6 +38,8 @@ class PKGameApiController extends Controller {
     	header('Content-type: application/json; charset=utf-8');
     	$user = D('user');
         $out = $user->ranking();
+        $out[0]['src_img']  = $out[0]['src_img'].'/w/240/';//图片宽度设为240
+        $out[1]['src_img']  = $out[1]['src_img'].'/w/240/';//图片宽度设为240
         if ($out) {
             $array = array('status' => 8200, 
                 'content' => $out);
