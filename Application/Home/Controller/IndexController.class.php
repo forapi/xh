@@ -40,7 +40,7 @@ class IndexController extends Controller {
 
         //$remote = 'http://mmbiz.qpic.cn/mmbiz/O2A1ZMEIfaibVwMOxQdJPSibAvyRlDkNEuEUZDqwDdo11O90y16vNaRNmphne9INYQq0lyyLhsWogiaJbcY3hlwog/0';
         //$filename = time();
-        $local = './Upload2/'.$filename;//因为“此图片来自微信公众平台 未经允许不得引用”，所以下载到本地
+        $local = './Upload/'.$filename;//因为“此图片来自微信公众平台 未经允许不得引用”，所以下载到本地
         //静态方法不用实例化类
         Http::curlDownload($remote,$local);
         //返回值怎么弄？？？
@@ -49,12 +49,33 @@ class IndexController extends Controller {
 
     public function imageView($imagename=null,$w=null){
         $h=1280;
-        $PicUrl = "http://www.putuo3.com/Upload2/".$imagename;
+        $PicUrl = "http://www.putuo3.com/Upload/".$imagename;
         //$PicUrl = 'http://mmbiz.qpic.cn/mmbiz/'.$imagename.'/0';
 
         $image = new \Think\Image(\Think\Image::IMAGE_GD,$PicUrl);        
         $image->thumb($w, $h,\Think\Image::IMAGE_THUMB_SCALE)->save();//等比例缩放类型并显示
         
+    }
+
+    public function check(){
+        $user = D('user');
+        $NeedCheck = $user->check();
+        $this->assign('NeedCheck',$NeedCheck);
+        //var_dump($NeedCheck);
+        $this->display();
+    }
+
+    public function checkAllow($idArray=array()){
+        if (!empty($idArray)) {
+            $user = D('user');
+            $res = $user->checkAllow($idArray);
+            $array = true === $res ? array('status' => 1 ):array('status' => 0 );
+            
+        }else{
+            $array = array('status' => 0 );
+        }
+        
+        echo json_encode($array,true);
     }
 
     public function weChat($id = ''){
@@ -109,7 +130,7 @@ class IndexController extends Controller {
                                 }elseif (-2 === $res) {
                                     $out = '请先上传图片';
                                 }else{
-                                    $out = 'success';
+                                    $out = '绑定成功，我们将尽快审核您的图片';
                                 }
                             }else{
                                 $out = 'error';
@@ -132,7 +153,7 @@ class IndexController extends Controller {
                     
                       $wx_data['open_id'] = $data['FromUserName'];
                       $imageViewUrl = "http://www.putuo3.com/?s=/home/Index/imageView/imagename/";
-                      $wx_data['src_img'] = $imageViewUrl.$filename.'/w/240/';
+                      $wx_data['src_img'] = $imageViewUrl.$filename;
                       $res = $user->updataPic($wx_data);
                       //报名信息也填在微信吧
                     
