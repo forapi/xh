@@ -78,15 +78,17 @@
                 </h4>
             </div>
             <div class="modal-body">
-                你已经预览了约10%的自拍，还有90%更加精彩的自拍等你浏览<br><br>请在 安卓客户端中打开浏览
+                你已经预览了部分自拍，还有更加精彩的自拍等你浏览<br><br>请 关注公众号
             </div>
             <div class="modal-footer">
                 <a class="btn btn-primary" href="http://mp.weixin.qq.com/s?__biz=MjM5ODAyNTc4MA==&mid=201680166&idx=2&sn=b85b26759ef922389febbcea17faef1b&key=d330096cec0c849ac411f1ca223b46bde7126bffc6efe4e61c0a1d586a2acb9d428b8bf0468bb5e67649579d660a4f66&ascene=0&uin=MjE4OTYxNQ%3D%3D&devicetype=iMac+MacBookPro11%2C1+OSX+OSX+10.10+build(14A389)&version=11010011&pass_ticket=%2FEpFTIxJrhyt6mWPmpp9jY5y6JJvMbL3Tb1O4d0DjLQ%3D">
-                    下一步
+                    关注
                 </a>
-                <a class="btn btn-primary" href="http://android.myapp.com/myapp/detail.htm?apkName=com.terry.photopk">
+                <!--
+                <a class="btn btn-primary" href="http://www.putuo3.com">
                     客户端浏览
                 </a>
+                -->
             </div>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal -->
@@ -137,13 +139,13 @@
     </div>
 
 
-    <p class="text-center" style="margin: 22px 0;"><a href="http://www.play76.com/">XXXXXXXXXXXXXXXXXXX</a></p>
+    <p class="text-center" style="margin: 22px 0;"><a href="http://www.putuo3.com/">XXXXXXXXXXXXXXXXXXX</a></p>
     <p class="text-center"><a href="http://mp.weixin.qq.com/s?__biz=MjM5ODAyNTc4MA==&mid=201652606&idx=4&sn=3647b44ab33891f91679d107605baecb#rd" class="btn btn-primary" role="button">我也要参加</a></p>
-    <p class="text-center"><small><a href="http://www.play76.com/">XXXXXX</a></small></p>
+    <p class="text-center"><small><a href="http://www.putuo3.com/">XXXXXX</a></small></p>
     <div class="footinfo">
-    <p class="text-center"><small>活动主办：<a href="http://www.play76.com/">play76</a></small></p>
-    <p class="text-center"><small>开发团队：<a href="http://www.play76.com/">微游科技</a> 微游科技</small></p>
-    <p class="text-center"><small>赞助单位：<a href="http://www.play76.com/">微游科技</a> <a href="http://www.play76.com/">微游科技</a> 微游科技</small></p>
+    <p class="text-center"><small>活动主办：<a href="http://www.putuo3.com/">play76</a></small></p>
+    <p class="text-center"><small>开发团队：<a href="http://www.putuo3.com/">微游科技</a> 微游科技</small></p>
+    <p class="text-center"><small>赞助单位：<a href="http://www.putuo3.com/">微游科技</a> <a href="http://www.putuo3.com/">微游科技</a> 微游科技</small></p>
 
 </div>
 </div>
