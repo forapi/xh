@@ -200,7 +200,10 @@ class IndexController extends Controller {
                     $content = "link";
                     break;
                 case Wechat::MSG_TYPE_EVENT:
-                    $content = "event";
+                    if ($data['Event']==subscribe) {
+                        $content = "您好！欢迎关注我的微信公众平台\n<a href='http://www.putuo3.com/xiaohua/index.php?s=0&m=1'>看自拍PK</a>";
+                        $wechat->replyText($content);
+                    }
                     break;
               
                 default:
