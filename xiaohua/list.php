@@ -36,8 +36,8 @@
             <ul class="nav navbar-nav">
                 <li><a href="index.php?s=0">女生PK</a></li>
                 <li><a href="index.php?s=1">男生PK</a></li>
-                <li class="active"><a href="list.php?s=0">女生榜</a></li>
-                <li ><a href="list.php?s=1">男生榜</a></li>
+                <li <?php echo $active=$_GET['s']==0?'class="active"':'';?>><a href="list.php?s=0">女生榜</a></li>
+                <li <?php echo $active=$_GET['s']==1?'class="active"':'';?>><a href="list.php?s=1">男生榜</a></li>
             </ul>
 
     </nav>

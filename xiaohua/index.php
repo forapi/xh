@@ -29,8 +29,8 @@
     <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
 
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php?s=0<?if($_GET['m']==1) echo '&m=1';?>">女生PK</a></li>
-                <li ><a href="index.php?s=1<?if($_GET['m']==1) echo '&m=1';?>">男生PK</a></li>
+                <li <?php echo $active=$_GET['s']==0?'class="active"':'';?>><a href="index.php?s=0<?if($_GET['m']==1) echo '&m=1';?>">女生PK</a></li>
+                <li <?php echo $active=$_GET['s']==1?'class="active"':'';?>><a href="index.php?s=1<?if($_GET['m']==1) echo '&m=1';?>">男生PK</a></li>
                 <li><a href="list.php?s=0<?if($_GET['m']==1) echo '&m=1';?>">女生榜</a></li>
                 <li><a href="list.php?s=1<?if($_GET['m']==1) echo '&m=1';?>">男生榜</a></li>
             </ul>
@@ -171,5 +171,17 @@ function shareTimeline(){WeixinJSBridge.invoke('shareTimeline',{"img_url":imgUrl
 function shareWeibo(){WeixinJSBridge.invoke('shareWeibo',{"content":descContent,"url":lineLink,},function(res){_report('weibo',res.err_msg);});}
 document.addEventListener('WeixinJSBridgeReady',function onBridgeReady(){WeixinJSBridge.on('menu:share:appmessage',function(argv){shareFriend();});WeixinJSBridge.on('menu:share:timeline',function(argv){shareTimeline();});WeixinJSBridge.on('menu:share:weibo',function(argv){shareWeibo();});},false);
 </script>
+<div style="display:none;">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?7f7ab39328e1f64396f371b6f490c607";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</div>
 
 </html>
