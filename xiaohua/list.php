@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-    <title>微信 7栋空间</title>
+    <title>微信 play76</title>
 
     <!-- Bootstrap -->
     <!--<link href="template/css/bootstrap.min.css" rel="stylesheet">-->
@@ -51,15 +51,15 @@
 
     <p style="text-align: center"><a href="http://mp.weixin.qq.com/s?__biz=MjM5ODAyNTc4MA==&mid=201652606&idx=4&sn=3647b44ab33891f91679d107605baecb#rd" class="btn btn-primary" role="button">我也要参加</a></p>
 <div class="footinfo">
-    <p class="text-center"><small>活动主办：<a href="http://www.7dong.cc/forum.php?mod=viewthread&tid=102280">7栋空间</a></small></p>
-    <p class="text-center"><small>开发团队：<a href="http://www.wowdg.com">哇塞文化</a> 微店啦</small></p>
-    <p class="text-center"><small>赞助单位：<a href="http://w.7dong.cc/xiaohua/zanzhu/yuanchuang/">元创摄影</a> <a href="http://w.7dong.cc/xiaohua/zanzhu/liulian/">榴莲摄影</a> 星巴克松山湖店</small></p>
+    <p class="text-center"><small>活动主办：<a href="http://www.putuo3.com/">微信 play76</a></small></p>
+    <p class="text-center"><small>开发团队：<a href="http://www.putuo3.com/">微信 play76</a> 微信 play76</small></p>
+    <p class="text-center"><small>赞助单位：<a href="http://www.putuo3.com/">微信 play76</a> <a href="http://www.putuo3.com/">微信 play76</a> 微信 play76</small></p>
 
 </div>
 </div>
 
 <script>
-var imgUrl='http://w.7dong.cc/xiaohua/images/wxshare.jpg';var lineLink='http://w.7dong.cc/xiaohua/';var descContent='哪所大学美女最多？史上最真实的自拍大PK!';var shareTitle='哪所大学美女最多？史上最真实的自拍大PK!';var appid='wxda8b1307f44c0840';function shareFriend(){WeixinJSBridge.invoke('sendAppMessage',{"appid":appid,"img_url":imgUrl,"img_width":"640","img_height":"640","link":lineLink,"desc":descContent,"title":shareTitle},function(res){_report('send_msg',res.err_msg);})}
+var imgUrl='http://www.putuo3.com/xiaohua/images/wxshare.jpg';var lineLink='http://www.putuo3.com/xiaohua/';var descContent='哪所大学美女最多？史上最真实的自拍大PK!';var shareTitle='哪所大学美女最多？史上最真实的自拍大PK!';var appid='wxda8b1307f44c0840';function shareFriend(){WeixinJSBridge.invoke('sendAppMessage',{"appid":appid,"img_url":imgUrl,"img_width":"640","img_height":"640","link":lineLink,"desc":descContent,"title":shareTitle},function(res){_report('send_msg',res.err_msg);})}
 function shareTimeline(){WeixinJSBridge.invoke('shareTimeline',{"img_url":imgUrl,"img_width":"640","img_height":"640","link":lineLink,"desc":descContent,"title":shareTitle},function(res){_report('timeline',res.err_msg);});}
 function shareWeibo(){WeixinJSBridge.invoke('shareWeibo',{"content":descContent,"url":lineLink,},function(res){_report('weibo',res.err_msg);});}
 document.addEventListener('WeixinJSBridgeReady',function onBridgeReady(){WeixinJSBridge.on('menu:share:appmessage',function(argv){shareFriend();});WeixinJSBridge.on('menu:share:timeline',function(argv){shareTimeline();});WeixinJSBridge.on('menu:share:weibo',function(argv){shareWeibo();});},false);
