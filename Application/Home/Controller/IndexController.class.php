@@ -114,34 +114,40 @@ class IndexController extends Controller {
                 case Wechat::MSG_TYPE_TEXT:
                     //$content = "text";
                     $key = strtolower($data['Content']);
-                    //bd+张三+北京大学+男
-                    $arr = explode('+', $key);
-                    if ($arr[0] == 'bd'){
-                        if (count($arr) == 4) {//格式
-                            $wx_data['nickname'] = $arr[1];
-                            $wx_data['school'] = $arr[2];
-                            $wx_data['sex'] = $arr[3] == '男' ? 1:0;
-                            $wx_data['open_id'] = $data['FromUserName'];
-                            $user = D('user');
-                            $res = $user->updataInformation($wx_data);
-                            if ($res) {
-                                if (-1 === $res) {
-                                    $out = '您已经绑定过了';
-                                }elseif (-2 === $res) {
-                                    $out = '请先上传图片';
+                    if ($key == 'pk'){
+                        $content = "<a href='http://www.putuo3.com/xiaohua/index.php?s=0&m=1'>全民自拍</a>";
+                        $wechat->replyText($content);
+                    }else{
+                        //bd+张三+北京大学+男
+                        $arr = explode('+', $key);
+                        if ($arr[0] == 'bd'){
+                            if (count($arr) == 4) {//格式
+                                $wx_data['nickname'] = $arr[1];
+                                $wx_data['school'] = $arr[2];
+                                $wx_data['sex'] = $arr[3] == '男' ? 1:0;
+                                $wx_data['open_id'] = $data['FromUserName'];
+                                $user = D('user');
+                                $res = $user->updataInformation($wx_data);
+                                if ($res) {
+                                    if (-1 === $res) {
+                                        $out = '您已经绑定过了';
+                                    }elseif (-2 === $res) {
+                                        $out = '请先上传图片';
+                                    }else{
+                                        $out = '绑定成功，我们将尽快审核您的图片';
+                                    }
                                 }else{
-                                    $out = '绑定成功，我们将尽快审核您的图片';
+                                    $out = 'error';
                                 }
                             }else{
-                                $out = 'error';
+                                $out = '您输入的格式有问题，请重新输入';
                             }
-                        }else{
-                            $out = '您输入的格式有问题，请重新输入';
-                        }
                         
-                        //$out = false === $res ? 'eroor':'success'; 
-                        $wechat->replyText($out);
+                            //$out = false === $res ? 'eroor':'success'; 
+                            $wechat->replyText($out);
+                        }
                     }
+                    
                     
                     break;
                 case Wechat::MSG_TYPE_IMAGE:
@@ -201,7 +207,7 @@ class IndexController extends Controller {
                     break;
                 case Wechat::MSG_TYPE_EVENT:
                     if ($data['Event']==subscribe) {
-                        $content = "您好！欢迎关注我的微信公众平台\n<a href='http://www.putuo3.com/xiaohua/index.php?s=0&m=1'>看自拍PK</a>";
+                        $content = "您好！欢迎关注我的微信公众平台\n------\n<a href='http://www.putuo3.com/xiaohua/index.php?s=0&m=1'>全民自拍</a>";
                         $wechat->replyText($content);
                     }
                     break;
