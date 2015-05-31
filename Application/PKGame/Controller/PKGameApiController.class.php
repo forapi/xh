@@ -76,7 +76,7 @@ class PKGameApiController extends Controller {
                 $num = $_COOKIE['num'];
             }
 
-            if ($num < 11) {
+            if ($num < 6) {//限制5次
                 $user = D('user');
                 $res = $user->vote();
                 if ($res) echo '{"status":8100}';
